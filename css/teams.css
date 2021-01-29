@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  
+    background: linear-gradient(to bottom right, #ff9966 45%, #66ffff 92%);
+
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+
+  width: 25%;
+  padding: 20px;
+  height: 700px; /* Should be removed. Only for demonstration */
+top : 0;
+padding-top: 20px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+

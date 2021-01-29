@@ -1,0 +1,395 @@
+
+p{
+font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+* {
+  box-sizing:border-box;
+}
+
+
+
+
+body {
+  font-family: "Arial",  red serif);
+  margin: 0;
+  }
+
+.container {
+  padding: 64px;
+  background: linear-gradient(to top left, #ffffcc 0%, #ffffff 100%);
+}
+
+.container1 {
+    height: 600px;
+      background: linear-gradient(to bottom right, #ffffff 0%, #ffffcc 100%);
+    }
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 25px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right:  25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button2 {
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 25px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:before {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-left:  25px;
+}
+
+.button2:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+
+.button3{
+
+border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 25px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00270c';
+  position: relative;
+  opacity: 0;
+  bottom: 0px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right:  50px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  bottom: 5;
+}
+
+
+.name{
+
+border: none;
+  color: white;
+ color: white;
+  text-shadow: 10px 5px 4px #000000;
+
+
+ }
+
+
+
+.name span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.name span:after {
+
+ content: "\002714";
+  float: right;
+  opacity: 0;
+  top: 0;
+  right: 10px;
+  transition: 0.5s;
+}
+
+.name:hover span {
+  padding-right:  10px;
+}
+
+.name:hover span:after {
+  opacity: 1;
+  right: 5px;
+}
+
+.button3 {
+  position: relative;
+  display: inline-block;
+ 
+  border-bottom: 1px dotted black;
+}
+
+.button3 .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  color: red;
+ 
+  background-color: black; 
+
+  text-align: left;
+  border-radius: 100px;
+  padding: 20px 20px;
+  
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.button3:hover .tooltiptext {
+  visibility: visible;
+  color: red;
+
+}
+
+
+
+
+
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttonload {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 24px; /* Some padding */
+  font-size: 16px; /* Set a font-size */
+
+}
+
+/* Add a right margin to each icon */
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+  }
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+.header {
+  
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+ h2{
+  font-family: 'Georgia', sans-serif;
+  font-size: 45px;
+  font-style: monospace;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+
+.navbar {
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  color: black;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  text-decoration: none;
+}
+
+
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+content: "  \00a9"
+  padding: 20px;
+  align-self: : bottom;
+  text-align: center;
+  background: #ddd;
+}
+
